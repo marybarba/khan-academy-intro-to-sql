@@ -1,0 +1,35 @@
+CREATE TABLE
+V_Marks_the_Shop
+
+(
+"ID" INTEGER PRIMARY KEY,
+"Food Name" TEXT,
+"Price" TEXT,
+"Section of the Store" TEXT,
+"Processed or WFPB" TEXT
+);
+
+INSERT INTO V_Marks_the_Shop VALUES
+(1, "Violife Feta Cheese", "$5.00", "Dairy", "Processed"),
+(2, "Vegan Ramen", "$15.00", "Pasta", "Processed"),
+(3, "Apples", "$1.00", "Produce", "WFPB"),
+(4, "Red Bell Peppers", "$1.00", "Produce", "WFPB"),
+(5, "Conscious Chris's Mozzerella Cheese", "$10.00", "Dairy", "Processed"),
+(6, "Philly Jerk Jerky", "$8.00", "Snacks", "Processed"),
+(7, "Dottie's Donuts", "$5.00", "Bakery", "Processed"),
+(8, "Lentil Soup", "$8.00", "Ready to Go", "WFPB"),
+(9, "Follow Your Heart Ranch", "$10.00", "Dairy", "Processed"),
+(10, "Miyokos Cheddar Cheese Sticks", "$12.00", "Dairy", "Processed"),
+(11, "Cashews", "$11.00", "Bulk", "WFPB"),
+(12, "Hemp Seeds", "$4.00", "Bulk", "WFPB"),
+(13, "Romaine Hearts", "$6.00", "Produce", "WFPB"),
+(14, "Black Beans", "$0.99", "Beans", "WFPB"),
+(15, "Taco Seasoning", "$2.00", "Spices", "Processed");
+
+SELECT * FROM "V_Marks_the_Shop";
+
+SELECT * FROM "V_Marks_the_Shop" ORDER BY Price asc;
+
+SELECT * FROM "V_Marks_the_Shop" ORDER BY Price desc;
+
+SELECT "Section of the Store", COUNT(*) "Number of Items Per Section" FROM "V_Marks_the_Shop" GROUP BY "Section of the Store";
