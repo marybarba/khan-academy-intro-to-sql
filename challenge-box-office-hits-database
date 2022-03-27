@@ -1,12 +1,12 @@
 CREATE TABLE
-movies
+`Mary's Playground`.`Box Office Hits`
     (
     id INTEGER PRIMARY KEY,
     name TEXT,
     release_year INTEGER
     );
     
-INSERT INTO movies VALUES
+INSERT INTO `Mary's Playground`.`Box Office Hits` VALUES
     (1, "Avatar", 2009),
     (2, "Titanic", 1997),
     (3, "Star Wars: Episode IV - A New Hope", 1977),
@@ -15,9 +15,9 @@ INSERT INTO movies VALUES
     (6, "Disney's Up", 2009)
     ;
  
-SELECT * FROM movies;
+SELECT * FROM `Mary's Playground`.`Box Office Hits`;
 
-SELECT * FROM movies
+SELECT * FROM `Mary's Playground`.`Box Office Hits`
     WHERE release_year >= 2000
     ORDER BY release_year asc
     ;
