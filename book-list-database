@@ -1,0 +1,11 @@
+CREATE TABLE "Favorite_Books" (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER);
+
+INSERT INTO
+"Favorite_Books"
+    VALUES
+    (1, "Dictionary", 10),
+    (2, "History Book", 5),
+    (3, "Dance Choreography Book", 8)
+    ;
+
+SELECT * FROM "Favorite_Books"
