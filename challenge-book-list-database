@@ -1,11 +1,15 @@
-CREATE TABLE "Favorite_Books" (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER);
+CREATE TABLE
+`Mary's Playground`.`Favorite Books`
+    (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    rating INTEGER
+    );
 
-INSERT INTO
-"Favorite_Books"
-    VALUES
-    (1, "Dictionary", 10),
-    (2, "History Book", 5),
-    (3, "Dance Choreography Book", 8)
+INSERT INTO `Mary's Playground`.`Favorite Books` VALUES
+    (1, 'Attached: The New Science of Adult Attachment and How It Can Help YouFind - and Keep - Love', 10),
+    (2, 'Getting Things Done', 9),
+    (3, 'Choreography Text Book', 8)
     ;
 
-SELECT * FROM "Favorite_Books"
+SELECT * FROM `Mary's Playground`.`Favorite Books`;
