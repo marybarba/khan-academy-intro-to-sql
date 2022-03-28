@@ -1,4 +1,4 @@
-**WHAT IS THIS ABOUT?**
+_WHAT IS THIS ABOUT?_
 -- In the "Book list database" challenge in Khan Academy's "Intro to SQL: Querying and Managing Data" lesson, I was challenged to do the following:
 -- "What are your favorite books? You can make a database table to store them in! In this first step, create a table to store your list of books. It should have columns for id, name, and rating."
 
